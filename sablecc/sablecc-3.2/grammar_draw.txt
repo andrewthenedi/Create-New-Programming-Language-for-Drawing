@@ -1,0 +1,35 @@
+Package assignlang;
+
+Helpers
+all_lc_color = 'red' | 'green' | 'blue' | 'yellow' | 'black' | 'cyan' | 'dark gray' | 'light gray' | 'magenta' | 'orange' | 'pink' | 'white';
+uc_lc_color = 'Red' | 'Green' | 'Blue' | 'Yellow' | 'Black' | 'Cyan' | 'Dark Gray' | 'Dark gray' | 'dark Gray' | 'Light Gray' | 'Light gray' | 'light Gray' | 'Magenta' | 'Orange' | 'Pink' | 'White';
+all_uc_color = 'RED' | 'GREEN' | 'BLUE' | 'YELLOW' | 'BLACK' | 'CYAN' | 'DARK GRAY' | 'DARK Gray' | 'DARK gray' | 'Dark GRAY' | 'dark GRAY' | 'LIGHT GRAY' | 'LIGHT Gray' | 'LIGHT gray' | 'Light GRAY' | 'light GRAY' | 'MAGENTA' | 'ORANGE' | 'PINK' | 'WHITE';
+all_lc_shape = 'line' | 'circle' | 'pentagon' | 'rectangle' | 'house' | 'car' | 'smiley';
+uc_lc_shape = 'Line' | 'Circle' | 'Pentagon' | 'Rectangle' | 'House' | 'Car' | 'Smiley';
+all_uc_shape = 'LINE' | 'CIRCLE' | 'PENTAGON' | 'RECTANGLE' | 'HOUSE' | 'CAR' | 'SMILEY';
+color = all_lc_color | uc_lc_color | all_uc_color;
+shape = all_lc_shape | uc_lc_shape | all_uc_shape;
+input_color = 'COLOR';
+input_shape = 'SHAPE';
+input_num = 'X_CURRENT' | 'Y_CURRENT' | 'X_NEXT' | 'Y_NEXT' | 'WIDTH' | 'HEIGHT';
+number = ['0'..'9']+;
+color_shape_number = color | shape | number;
+
+Tokens
+	identifier = input_color | input_shape | input_num | color_shape_number;
+        opsemicolon = ';';
+        opequal = '=';
+        blank = (' ' | 13 | 10)+;
+
+
+Ignored Tokens
+ blank;
+
+Productions 
+ program = {list} statementlist;
+
+ statementlist = {stmt} statement | {list} statement statementlist;
+
+ statement = {assign} identifier opequal assignrest;
+
+ assignrest = {assign} identifier opsemicolon;

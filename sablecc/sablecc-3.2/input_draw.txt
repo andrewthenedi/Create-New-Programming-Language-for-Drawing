@@ -1,0 +1,47 @@
+SHAPE = line;
+COLOR = DARK Gray;
+X_CURRENT = 200;
+Y_CURRENT = 50;
+X_NEXT = 300;
+Y_NEXT = 150;
+
+SHAPE = smiley;
+COLOR = Red;
+X_CURRENT = 100;
+Y_CURRENT = 30;
+
+SHAPE = Circle;
+COLOR = Orange;
+X_CURRENT = 300;
+Y_CURRENT = 300;
+WIDTH = 100;
+HEIGHT = 100;
+
+SHAPE = Pentagon;
+COLOR = green;
+X_CURRENT = 250;
+Y_CURRENT = 250;
+
+SHAPE = rectangle;
+COLOR = light gray;
+X_CURRENT = 200;
+Y_CURRENT = 200;
+WIDTH = 200;
+HEIGHT = 200;
+
+SHAPE = House;
+COLOR = BLUE;
+X_CURRENT = 50;
+Y_CURRENT = 100;
+WIDTH = 100;
+HEIGHT = 80;
+
+SHAPE = Car;
+COLOR = Cyan;
+X_CURRENT = 200;
+Y_CURRENT = 400;
+
+SHAPE = smiley;
+COLOR = magenta;
+X_CURRENT = 200;
+Y_CURRENT = 60;
