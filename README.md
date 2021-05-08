@@ -28,9 +28,9 @@ You need to have installed following softwares and libraries in your machine bef
 
 ## Authors
 
-* Andrew Thenedi [18079969D]
-* Chan Man Ching Bryan [18035914D]
-* JooHwan-Lee [18079916D]
+* Andrew Thenedi
+* Chan Man Ching Bryan
+* JooHwan-Lee
 
 
 ## Acknowledgement
